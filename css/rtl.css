@@ -1,0 +1,43 @@
+.page {
+    direction: rtl;
+}
+.page__footer {
+    padding-left: 70px;
+    padding-right: 0;
+}
+.main__description_4 {
+    direction: ltr;
+}
+.main__description_6 {
+    direction: ltr;
+}
+.history__events {
+  margin-right: 40px;
+  padding-right: 30px;
+  border-right: 4px solid;
+  border-right-color: currentcolor;
+  margin-left: 0;
+  padding-left: 0;
+  border-left: none;
+  border-right-color: none;
+}
+.history__event::before {
+    right: -32px;
+    transform: translate(50%, 30%);
+    -webkit-transform: translate(50%, 30%);
+    -moz-transform: translate(50%, 30%);
+    -ms-transform: translate(50%, 30%);
+    -o-transform: translate(50%, 30%);
+}
+.history__events_1 {
+    border-color: #fa4d4e;
+}
+.history__events_1 .history__event::before {
+    background-color: #fa4d4e;
+}
+.history__events_2 {
+    border-color: #fc764c;
+}
+.history__events_2 .history__event::before {
+    background-color: #fc764c;
+}

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html id="mylang" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="описание не длиннее 155 символов">
+    <meta name="keywords" content="мета-теги, шаблон, html, css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/adapted.css">
+    <link id="mystyle" rel="stylesheet" href="css/rtl.css">
+
+</head>
+
+<body>
+    <label>
+        <input type="checkbox" id="team-change" class="visually-hidden" onchange="changeTheme(this.checked)">
+    </label>
+    <div class="border color__border">
+        <ul class="list border__list">
+            <li class="item border_item border__item_1"></li>
+            <li class="item border_item border__item_2"></li>
+            <li class="item border_item border__item_3"></li>
+            <li class="item border_item border__item_4"></li>
+            <li class="item border_item border__item_5"></li>
+            <li class="item border_item border__item_6"></li>
+        </ul>
+    </div>
+    <div class="page">
+        <div class="container page__container">
+            <div class="wrapper page__wrapper">
+                <header class="header page__header">
+                    <div class="team-switches header__team-switches">
+                        <label for="team-change" class="header__team-switch header__team-switch_light"></label>
+                        <label for="team-change" class="header__team-switch header__team-switch_dark"></label>
+                    </div>
+                    <!-- Language menu -->
+                    <div class="languages main__languages">
+                        <select name="change-lang" id="change-lang" class="change-lang">
+                            <option class="lanquage__button lanquage__button_en lanquage__button_en" value="en">En</option>
+                            <option class="lanquage__button lanquage__button_ru lanquage__button_ru" value="ru">Ru</option>
+                            <option class="lanquage__button lanquage__button_heb lanquage__button_he" value="he">Heb</option>
+                        </select>
+                    </div>
+                    <picture class="image header__image">
+                        <!--1x: 293px; 2x: 586px-->
+                        <source>
+                        <source>
+                        <source>
+                        <source>
+                        <source type="image/webp" srcset="images/foto.webp 1x, images/foto-2x.webp 2x">
+                        <img width="239" height="239" src="images/foto.jpg" srcset="images/foto@2x.jpg 2x" alt="">
+                    </picture>
+                    <ul class="name header__name">
+                        <li class="greeting header__greeting"><span class="lng__header__greeting">Hi, I&apos;m </span> <span class="header__greeting__name lng__header__greeting__name"> Mihail Gofman</span></li>
+                        <li class="specialty header__specialty lng__header__specialty">HTML Coder</li>
+                        <li class="specialization header__specialization lng__header__specialization">HTML and CSS layout, Adaptation for mobile devices, Email layout </li>
+                    </ul>
+                    <nav>
+                        <ul class="menu header__menu">
+                            <li class="item menu__item header__menu__item header__menu__item_1">
+                                <icon class="icon menu__icon header__menu__icon">
+                                    <a href="#" target="_blank">
+                                        <svg>
+                                            <use xlink:href="#identity-card"></use>
+                                        </svg>
+                                    </a>
+                                </icon>
+                                <span class="lng__header__menu__item_1">Profile</span>
+                            </li>
+                            <li class="item menu__item header__menu__item header__menu__item_2">
+                                <icon class="icon menu__icon header__menu__icon">
+                                    <a href="resume.html" target="_blank">
+                                        <svg>
+                                            <use xlink:href="#menu-button"></use>
+                                        </svg>
+                                    </a>
+                                </icon>
+                                <span class="lng__header__menu__item_2">Resume</span>
+                            </li>
+                            <li class="item menu__item header__menu__item header__menu__item_3">
+                                <icon class="icon menu__icon header__menu__icon">
+                                    <a href="#" target="_blank">
+                                        <svg>
+                                            <use xlink:href="#briefcase"></use>
+                                        </svg>
+                                    </a>
+                                </icon>
+                                <span class="lng__header__menu__item_3">Portfolio</span>
+                            </li>
+                            <li class="item menu__item header__menu__item header__menu__item_4">
+                                <icon class="icon menu__icon header__menu__icon">
+                                    <a href="#" target="_blank">
+                                        <svg>
+                                            <use xlink:href="#setting"></use>
+                                        </svg>
+                                    </a>
+                                </icon>
+                                <span class="lng__header__menu__item_4">Services</span>
+                            </li>
+                            <li class="item menu__item header__menu__item header__menu__item_5">
+                                <icon class="icon menu__icon header__menu__icon">
+                                    <a href="#" target="_blank">
+                                        <svg>
+                                            <use xlink:href="#testimonial"></use>
+                                        </svg>
+                                    </a>
+                                </icon>
+                                <span class="lng__header__menu__item_5">Testimonials</span>
+                            </li>
+                            <li class="item menu__item header__menu__item header__menu__item_6">
+                                <icon class="icon menu__icon header__menu__icon">
+                                    <a href="#" target="_blank">
+                                        <svg>
+                                            <use xlink:href="#mail"></use>
+                                        </svg>
+                                    </a>
+                                </icon>
+                                <span class="lng__header__menu__item_6">Contacts</span>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+                <main class="main page__main">
+                    <section class="portfile main__portfile" id="portfile">
+                        <div class="title main__title">
+                            <h1 class="lng__main__title_profile">Profile</h1>
+                            <svg>
+                                <use xlink:href="#identity-card"></use>
+                            </svg>
+                        </div>
+                        <div class="content main__content">
+                            <div class="personal main__personal">
+                                <picture class="image main__image">
+                                    <!--1x: 180px; 2x: 360px-->
+                                    <source>
+                                    <source>
+                                    <source>
+                                    <source>
+                                    <source type="image/webp" srcset="images/foto.webp 1x, images/foto-2x.webp 2x">
+                                    <img width="180" height="180" src="images/foto.jpg" srcset="images/foto@2x.jpg 2x" alt="">
+                                </picture>
+                                <dl class="data main__data">
+                                    <dt class="term main__term main__term_1 lng__main__term_1">Name</dt>
+                                    <dd class="description main__description main__description_1 lng__main__description_1">Mihail Gofman</dd>
+                                    <p></p>
+                                    <dt class="term main__term main__term_2 lng__main__term_2">Date of birth</dt>
+                                    <dd class="description main__description main__description_2 lng__main__description_2">November 21, 1951</dd>
+                                    <p></p>
+                                    <dt class="term main__term main__term_3 lng__main__term_3">Address</dt>
+                                    <dd class="description main__description main__description_3 lng__main__description_3">Ashkelon, Israel</dd>
+                                    <p></p>
+                                    <dt class="term main__term main__term_4 lng__main__term_4">Phone</dt>
+                                    <dd class="description main__description main__description_4">+972-50-836-44-07</dd>
+                                    <p></p>
+                                    <dt class="term main__term main__term_5 lng__main__term_5">Email</dt>
+                                    <dd class="description main__description main__description_5">Mihail51@Gmail.com</dd>
+                                    <p></p>
+                                    <dt class="term main__term main__term_6 lng__main__term_6">Website</dt>
+                                    <dd class="description main__description main__description_6">www.mihail51.info/</dd>
+                                </dl>
+                            </div>
+                            <hr class="line main__line">
+                            <p class="about main__about lng__main__about">Hello, I'm Mikhail Goffman, a beginner HTML layout designer. I create responsive and cross-browser layouts and can structure and optimize code for better performance and accessibility. In my portfolio you will find examples of my work demonstrating my skills in using semantic tags, attributes and microformats. I strive for good design and UX to create pages that are aesthetically pleasing and informative.</p>
+                            <div class="why main__why">
+                                <h2 class="title why__title lng__why__title">Why Choose Me ?</h2>
+                                <ul class="causes why__causes">
+                                    <li class="cause why__cause">
+                                        <svg><use xlink:href="#check"></use></svg>
+                                        <span class="lng__why__cause_1">Simplicity and creativity</span>
+                                    </li>
+                                    <li class="cause why__cause">
+                                        <svg><use xlink:href="#check"></use></svg>
+                                        <span class="lng__why__cause_2">Empathize with the users</span>
+                                    </li>
+                                    <li class="cause why__cause">
+                                        <svg><use xlink:href="#check"></use></svg>
+                                        <span class="lng__why__cause_3">Creative Design</span>
+                                    </li>
+                                    <li class="cause why__cause">
+                                        <svg><use xlink:href="#check"></use></svg>
+                                        <span class="lng__why__cause_4">Customer Journey Map</span>
+                                    </li>
+                                    <li class="cause why__cause">
+                                        <svg><use xlink:href="#check"></use></svg>
+                                        <span class="lng__why__cause_5">UX design process</span>
+                                    </li>
+                                    <li class="cause why__cause">
+                                        <svg><use xlink:href="#check"></use></svg>
+                                        <span class="lng__why__cause_6">Prototyping Deliverables</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="facts main__facts">
+                                <li class="fact main__fact main__fact_1">
+                                    <p class="quantity fact__quantity">30+</p>
+                                    <p class="name fact__name lng__fact__name_1">Ongoing Project</p>
+                                </li>
+                                <li class="fact main__fact main__fact_2">
+                                    <p class="quantity fact__quantity">200</p>
+                                    <p class="name fact__name lng__fact__name_2">Project Done</p>
+                                </li>
+                                <li class="fact main__fact main__fact_3">
+                                    <p class="quantity fact__quantity">50+</p>
+                                    <p class="name fact__name lng__fact__name_3">Clinets</p>
+                                </li>
+                                <li class="fact main__fact main__fact_4">
+                                    <p class="quantity fact__quantity">40+</p>
+                                    <p class="name fact__name lng__fact__name_4">Country</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <aside class="aside main__aside">
+                        <a title="chat" href="#" class="chat aside__chat">
+                            <svg>
+                                <svg><use xlink:href="#pencil"></use></svg>
+                            </svg>
+                        </a>
+                        <button title="print" onclick="window.print()" class="print aside__print">
+                            <svg>
+                                <use xlink:href="#printer"></use>
+                            </svg>
+                        </button>
+                        <a title="download" href="index.html/#portfile" class="download aside__download" download="download">
+                            <svg>
+                                <use xlink:href="#download"></use>
+                            </svg>
+                        </a>
+                    </aside>
+                </main>
+                <footer class="footer page__footer">
+                    <p class="inform footer__inform">&copy; 2020 Ruller. <span class="lng__footer__inform">All Rights Reserved.</span></p>
+                    <ul class="icons footer__icons">
+                        <li class="icon footer__icon footer__icon_1">
+                            <a title="behance" href="https://www.behance.net/mihail51" target="_blank" class="link footer__link">
+                                <svg>
+                                    <use xlink:href="#behance"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="icon footer__icon footer__icon_2">
+                            <a title="facebook" href="https://www.facebook.com/mihail.gofman" target="_blank" class="link footer__link">
+                                <svg>
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="icon footer__icon footer__icon_3">
+                            <a title="twitter" href="https://twitter.com/Mihail51G" target="_blank" class="link footer__link">
+                                <svg>
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="icon footer__icon footer__icon_4">
+                            <a title="telegram" href="tg://resolve?domain=mihail1951" target="_blank" class="link footer__link">
+                                <svg>
+                                    <use xlink:href="#telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="icon footer__icon footer__icon_5">
+                            <a title="vk" href="https://vk.com/id166174672" target="_blank" class="link footer__link">
+                                <svg>
+                                    <use xlink:href="#vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="icon footer__icon footer__icon_6">
+                            <a title="linkedin" href="https://www.linkedin.com/in/mihail-gofman-1184bb69/" target="_blank" class="link footer__link">
+                                <svg>
+                                    <use xlink:href="#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="icon footer__icon footer__icon_7">
+                            <a title="pinterest" href="https://www.pinterest.com/mihailgof/" target="_blank" class="link footer__link">
+                                <svg>
+                                    <use xlink:href="#pinterest"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="icon footer__icon footer__icon_8">
+                            <a title="skype" href="skype:live:mihail51_3?chat" target="_blank" class="link footer__link">
+                                <svg>
+                                    <use xlink:href="#skype"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="icon footer__icon footer__icon_9">
+                            <a title="whatsapp" href="https://wa.me/972508364407" target="_blank" class="link footer__link">
+                                <svg>
+                                    <use xlink:href="#whatsapp"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="icon footer__icon footer__icon_10">
+                            <a title="Viber" href="viber://chat?number=+972508364407" target="_blank" class="link footer__link">
+                                <svg>
+                                    <use xlink:href="#viber"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+    </div>
+<!--Переключатель тем-->
+    <script>
+  function changeTheme(isChecked) {
+    if (isChecked) {
+      document.body.setAttribute('light', '');
+    } else {
+      document.body.removeAttribute('light');
+    }
+  }
+</script>
+
+<script src="js/lang.js"></script>    
+<script src="js/app.js"></script>
+    
+</body>
+</html>
+
+<svg display="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <symbol id="identity-card" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" fill-rule="evenodd" class="">
+        <g>
+            <path d="M3.659 29.843h24.682a.75.75 0 0 0 0-1.5H3.659a.75.75 0 0 0 0 1.5zM13.5 7.093V4.407a2.25 2.25 0 0 0-2.25-2.25h-1.5a2.25 2.25 0 0 0-2.25 2.25v2.686c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75zM24.5 7.093V4.407a2.25 2.25 0 0 0-2.25-2.25h-1.5a2.25 2.25 0 0 0-2.25 2.25v2.686c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75z" fill="" opacity="1" data-original="#000000" class=""></path>
+            <path d="M29.091 9.093a2.75 2.75 0 0 0-2.75-2.75H5.659a2.75 2.75 0 0 0-2.75 2.75V24.41a2.75 2.75 0 0 0 2.75 2.75h20.682a2.75 2.75 0 0 0 2.75-2.75zM14.25 19.185a2.584 2.584 0 0 0-2.583-2.583H8.833a2.584 2.584 0 0 0-2.583 2.583v1.057a1.796 1.796 0 0 0 1.797 1.797h4.406a1.795 1.795 0 0 0 1.797-1.797zm2.912 1.565h7.853a.75.75 0 0 0 0-1.5h-7.853a.75.75 0 0 0 0 1.5zm-4.412-1.565v1.057a.298.298 0 0 1-.297.297H8.047a.296.296 0 0 1-.297-.297v-1.057c0-.598.485-1.083 1.083-1.083h2.834c.598 0 1.083.485 1.083 1.083zm4.412-1.865h7.853a.75.75 0 0 0 0-1.5h-7.853a.75.75 0 0 0 0 1.5zm-6.912-6.565a2.376 2.376 0 1 0 2.375 2.375 2.376 2.376 0 0 0-2.375-2.375zm0 1.5a.875.875 0 1 1 0 1.75.875.875 0 0 1 0-1.75zm6.912 1.636h7.853a.75.75 0 0 0 0-1.5h-7.853a.75.75 0 0 0 0 1.5z" fill="" opacity="1" data-original="#000000" class=""></path>
+        </g>
+    </symbol>
+    <symbol id="menu-button" x="0px" y="0px" viewBox="0 0 459 459" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+        <g>
+            <path d="M0 382.5h459v-51H0v51zM0 255h459v-51H0v51zM0 76.5v51h459v-51H0z" fill="" opacity="1" data-original="#000000"></path>
+        </g>
+    </symbol>
+    <symbol id="briefcase" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+        <g>
+			<path d="M469.333,106.667H362.667V85.333c0-23.531-19.135-42.667-42.667-42.667H192c-23.531,0-42.667,19.135-42.667,42.667
+				v21.333H42.667C19.135,106.667,0,125.802,0,149.333v64C0,236.865,19.135,256,42.667,256h170.667v-10.667
+				c0-5.896,4.771-10.667,10.667-10.667h64c5.896,0,10.667,4.771,10.667,10.667V256h170.667C492.865,256,512,236.865,512,213.333
+				v-64C512,125.802,492.865,106.667,469.333,106.667z M320,106.667H192V85.333h128V106.667z"/>
+			<path d="M506.083,267.51c-3.635-1.802-7.979-1.385-11.188,1.052c-7.583,5.74-16.417,8.771-25.563,8.771H298.667v32
+				c0,5.896-4.771,10.667-10.667,10.667h-64c-5.896,0-10.667-4.771-10.667-10.667v-32H42.667c-9.146,0-17.979-3.031-25.563-8.771
+				c-3.219-2.458-7.552-2.875-11.188-1.052C2.292,269.313,0,273.01,0,277.063v149.604c0,23.531,19.135,42.667,42.667,42.667h426.667
+				c23.531,0,42.667-19.135,42.667-42.667V277.063C512,273.01,509.708,269.313,506.083,267.51z"/>
+		</g>
+    </symbol>
+    <symbol id="setting" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
+        <g transform="matrix(1,-2.465190328815662e-32,2.465190328815662e-32,1,-1.4210854715202004e-13,-5.684341886080802e-14)">
+            <path d="m500.633 211.454-58.729-14.443a193.856 193.856 0 0 0-13.55-32.256c8.818-14.678 27.349-45.571 27.349-45.571a15.001 15.001 0 0 0-2.256-18.325l-42.422-42.422a14.958 14.958 0 0 0-18.325-2.256L347.055 83.53a193.24 193.24 0 0 0-32.065-13.433l-14.443-58.729A14.996 14.996 0 0 0 286 0h-60c-6.885 0-12.891 4.688-14.546 11.367 0 0-10.005 40.99-14.429 58.715a192.571 192.571 0 0 0-34.043 14.502l-47.329-28.403c-5.918-3.516-13.447-2.607-18.325 2.256l-42.422 42.422a15.001 15.001 0 0 0-2.256 18.325l29.268 48.882a193.296 193.296 0 0 0-11.821 28.901l-58.729 14.487A14.994 14.994 0 0 0 0 226v60c0 6.885 4.688 12.891 11.367 14.546l58.744 14.443c3.56 11.294 8.188 22.266 13.799 32.798l-26.191 43.652a15.001 15.001 0 0 0 2.256 18.325l42.422 42.422c4.849 4.849 12.407 5.771 18.325 2.256 0 0 29.37-17.607 43.755-26.221a193.254 193.254 0 0 0 32.549 13.696l14.429 58.715C213.109 507.313 219.115 512 226 512h60a14.995 14.995 0 0 0 14.546-11.367l14.429-58.715a190.535 190.535 0 0 0 33.281-14.136c14.78 8.862 44.443 26.66 44.443 26.66 5.903 3.53 13.462 2.622 18.325-2.256l42.422-42.422a15.001 15.001 0 0 0 2.256-18.325l-26.968-44.927a192.1 192.1 0 0 0 13.169-31.523l58.729-14.443A14.993 14.993 0 0 0 512 286v-60a14.994 14.994 0 0 0-11.367-14.546zM256 361c-57.891 0-105-47.109-105-105s47.109-105 105-105 105 47.109 105 105-47.109 105-105 105z" fill="" opacity="1" data-original="#000000"></path>
+        </g>
+    </symbol>
+    <symbol id="testimonial" x="0" y="0" viewBox="0 0 53 53" style="enable-background:new 0 0 512 512" xml:space="preserve">
+        <g>
+            <path d="M37.39 6.6H8.12C5.29 6.6 3 8.9 3 11.73v16.01c0 1.42.57 2.7 1.5 3.63.92.93 2.2 1.5 3.62 1.5.34 0 .6.3.55.65l-.86 5.52c-.09.54.55.86.93.48l6.63-6.49c.11-.1.24-.16.39-.16h21.63c2.83 0 5.13-2.29 5.13-5.13V11.73c0-2.83-2.3-5.13-5.13-5.13zM14.72 19.3l-1.42 1.38c-.12.12-.18.3-.15.47l.34 1.95c.07.42-.38.75-.76.55l-1.76-.92a.51.51 0 0 0-.48 0l-1.77.92c-.38.2-.83-.12-.75-.55l.33-1.95a.523.523 0 0 0-.15-.46L6.73 19.3a.529.529 0 0 1 .29-.9l1.96-.28c.17-.02.32-.13.4-.28l.88-1.79c.19-.39.75-.39.94 0l.87 1.79c.08.15.23.26.4.28l1.96.28c.43.07.6.59.29.9zm12.03 0-1.42 1.38c-.12.12-.18.3-.15.47l.34 1.95c.07.42-.37.75-.76.55L23 22.73a.51.51 0 0 0-.48 0l-1.76.92c-.39.2-.83-.12-.76-.55l.33-1.95a.523.523 0 0 0-.15-.46l-1.42-1.39a.529.529 0 0 1 .29-.9l1.96-.28c.17-.02.32-.13.4-.28l.88-1.79c.19-.39.75-.39.94 0l.87 1.79c.08.15.23.26.4.28l1.96.28c.43.07.6.59.29.9zm12.03 0-1.42 1.38c-.12.12-.17.3-.14.47l.33 1.95c.08.42-.37.75-.76.55l-1.75-.92a.53.53 0 0 0-.49 0l-1.76.92c-.38.2-.83-.12-.76-.55l.33-1.95a.523.523 0 0 0-.15-.46l-1.42-1.39a.529.529 0 0 1 .29-.9l1.97-.28c.17-.02.31-.13.39-.28l.88-1.79c.2-.39.75-.39.94 0l.88 1.79a.5.5 0 0 0 .39.28l1.96.28c.43.07.6.59.29.9z" fill="" opacity="1" data-original="#000000"></path>
+            <path d="M50 18.44v16.02c0 1.42-.58 2.7-1.5 3.63-.93.92-2.22 1.49-3.63 1.49-.34 0-.6.31-.54.65l.85 5.52c.09.54-.55.86-.93.49l-6.63-6.5a.62.62 0 0 0-.39-.16H15.6c-1.14 0-2.19-.37-3.04-1l3.79-3.71h21.04c3.93 0 7.13-3.2 7.13-7.13V13.31h.35c2.83 0 5.13 2.29 5.13 5.13z" fill="" opacity="1" data-original="#000000"></path>
+        </g>
+    </symbol>
+    <symbol id="mail" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve">
+        <g>
+            <path d="M30 8v16a3.009 3.009 0 0 1-3 3H5a3.009 3.009 0 0 1-3-3V8a2.879 2.879 0 0 1 .22-1.1l1.18.9.6.45 10.2 7.65a3 3 0 0 0 3.6 0L28 8.25l.6-.45 1.18-.9A2.879 2.879 0 0 1 30 8zm-3-3H5a2.962 2.962 0 0 0-1.47.39l1.07.81 1.07.8 9.73 7.3a1 1 0 0 0 1.2 0L26.33 7l1.07-.8 1.07-.81A2.962 2.962 0 0 0 27 5z" data-name="Layer 2" fill="" opacity="1" data-original="#000000"></path>
+        </g>
+    </symbol>
+    <symbol id="pencil" x="0" y="0" viewBox="0 0 492.493 492" style="enable-background:new 0 0 512 512" xml:space="preserve">
+        <g>
+            <path d="M304.14 82.473 33.165 353.469a10.799 10.799 0 0 0-2.816 4.949L.313 478.973a10.716 10.716 0 0 0 2.816 10.136 10.675 10.675 0 0 0 7.527 3.114 10.6 10.6 0 0 0 2.582-.32l120.555-30.04a10.655 10.655 0 0 0 4.95-2.812l271-270.977zM476.875 45.523 446.711 15.36c-20.16-20.16-55.297-20.14-75.434 0l-36.949 36.95 105.598 105.597 36.949-36.949c10.07-10.066 15.617-23.465 15.617-37.715s-5.547-27.648-15.617-37.719zm0 0" fill="" opacity="1" data-original="#000000"></path>
+        </g>
+    </symbol>
+    <symbol id="printer" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
+        <g>
+            <path d="M414 80H98c-5.523 0-10-4.477-10-10V44c0-24.301 19.699-44 44-44h248c24.301 0 44 19.699 44 44v26c0 5.523-4.477 10-10 10zM458 112H54c-29.776 0-54 24.224-54 54v188c0 29.776 24.224 54 54 54h34v-80c0-39.701 32.299-72 72-72h192c39.701 0 72 32.299 72 72v80h34c29.776 0 54-24.224 54-54V166c0-29.776-24.224-54-54-54zM96.02 232c-13.255 0-24.005-10.745-24.005-24s10.74-24 23.995-24h.01c13.255 0 24 10.745 24 24s-10.745 24-24 24z" fill="" opacity="1" data-original="#000000"></path>
+            <path d="M352 304H160c-13.255 0-24 10.745-24 24v112c0 13.255 10.745 24 24 24h192c13.255 0 24-10.745 24-24V328c0-13.255-10.745-24-24-24z" fill="" opacity="1" data-original="#000000"></path>
+        </g>
+    </symbol>
+    <symbol id="download" x="0" y="0" viewBox="0 0 475.078 475.077" style="enable-background:new 0 0 512 512" xml:space="preserve">
+        <g>
+            <path d="M467.083 318.627c-5.324-5.328-11.8-7.994-19.41-7.994H315.195l-38.828 38.827c-11.04 10.657-23.982 15.988-38.828 15.988-14.843 0-27.789-5.324-38.828-15.988l-38.543-38.827H27.408c-7.612 0-14.083 2.669-19.414 7.994C2.664 323.955 0 330.427 0 338.044v91.358c0 7.614 2.664 14.085 7.994 19.414 5.33 5.328 11.801 7.99 19.414 7.99h420.266c7.61 0 14.086-2.662 19.41-7.99 5.332-5.329 7.994-11.8 7.994-19.414v-91.358c0-7.617-2.662-14.089-7.995-19.417zm-107.058 96.214c-3.621 3.617-7.905 5.424-12.854 5.424s-9.227-1.807-12.847-5.424c-3.614-3.617-5.421-7.898-5.421-12.844 0-4.948 1.807-9.236 5.421-12.847 3.62-3.62 7.898-5.431 12.847-5.431s9.232 1.811 12.854 5.431c3.613 3.61 5.421 7.898 5.421 12.847 0 4.945-1.808 9.227-5.421 12.844zm73.084 0c-3.614 3.617-7.898 5.424-12.848 5.424-4.948 0-9.229-1.807-12.847-5.424-3.613-3.617-5.42-7.898-5.42-12.844 0-4.948 1.807-9.236 5.42-12.847 3.617-3.62 7.898-5.431 12.847-5.431s9.233 1.811 12.848 5.431c3.617 3.61 5.427 7.898 5.427 12.847 0 4.945-1.807 9.227-5.427 12.844z" fill="" opacity="1" data-original="#000000"></path>
+            <path d="M224.692 323.479c3.428 3.613 7.71 5.421 12.847 5.421 5.141 0 9.418-1.808 12.847-5.421l127.907-127.908c5.899-5.519 7.234-12.182 3.997-19.986-3.23-7.421-8.847-11.132-16.844-11.136h-73.091V36.543c0-4.948-1.811-9.231-5.421-12.847-3.62-3.617-7.901-5.426-12.847-5.426h-73.096c-4.946 0-9.229 1.809-12.847 5.426-3.615 3.616-5.424 7.898-5.424 12.847V164.45h-73.089c-7.998 0-13.61 3.715-16.846 11.136-3.234 7.801-1.903 14.467 3.999 19.986l127.908 127.907z" fill="" opacity="1" data-original="#000000"></path>
+        </g>
+    </symbol>
+    <symbol id="behance" x="0" y="0" viewBox="0 0 511.958 511.958" style="enable-background:new 0 0 512 512" xml:space="preserve">
+        <g>
+            <path d="M210.624 240.619c10.624-5.344 18.656-11.296 24.16-17.728 9.792-11.584 14.624-26.944 14.624-45.984 0-18.528-4.832-34.368-14.496-47.648-16.128-21.632-43.424-32.704-82.016-33.28H0v312.096h142.56c16.064 0 30.944-1.376 44.704-4.192 13.76-2.848 25.664-8.064 35.744-15.68 8.96-6.624 16.448-14.848 22.4-24.544 9.408-14.656 14.112-31.264 14.112-49.76 0-17.92-4.128-33.184-12.32-45.728-8.288-12.544-20.448-21.728-36.576-27.552zM63.072 150.187h68.864c15.136 0 27.616 1.632 37.408 4.864 11.328 4.704 16.992 14.272 16.992 28.864 0 13.088-4.32 22.24-12.864 27.392-8.608 5.152-19.776 7.744-33.472 7.744H63.072v-68.864zm108.896 198.24c-7.616 3.68-18.336 5.504-32.064 5.504H63.072v-83.232h77.888c13.568.096 24.128 1.888 31.68 5.248 13.44 6.08 20.128 17.216 20.128 33.504 0 19.2-6.912 32.128-20.8 38.976zM327.168 110.539h135.584v38.848H327.168zM509.856 263.851c-2.816-18.08-9.024-33.984-18.688-47.712-10.592-15.552-24.032-26.944-40.384-34.144-16.288-7.232-34.624-10.848-55.04-10.816-34.272 0-62.112 10.72-83.648 32-21.472 21.344-32.224 52.032-32.224 92.032 0 42.656 11.872 73.472 35.744 92.384 23.776 18.944 51.232 28.384 82.4 28.384 37.728 0 67.072-11.232 88.032-33.632 13.408-14.144 20.992-28.064 22.656-41.728H446.24c-3.616 6.752-7.808 12.032-12.608 15.872-8.704 7.04-20.032 10.56-33.92 10.56-13.216 0-24.416-2.912-33.76-8.704-15.424-9.28-23.488-25.536-24.512-48.672h170.464c.256-19.936-.384-35.264-2.048-45.824zm-166.88 5.984c2.24-15.008 7.68-26.912 16.32-35.712 8.64-8.768 20.864-13.184 36.512-13.216 14.432 0 26.496 4.128 36.32 12.416 9.696 8.352 15.168 20.48 16.288 36.512h-105.44z" fill="" opacity="1" data-original="#000000"></path>
+        </g>
+    </symbol>
+    <symbol id="dribble" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" fill-rule="evenodd">
+        <g>
+            <path d="M315.36 242.51c-5.19-12-10.6-23.98-16.37-35.83 49.27-21.34 88.87-50.32 118.37-87.07 28.78 34.01 46.85 77.2 49.51 124.47-54.93-8.99-105.45-9.49-151.51-1.57zm58.02 189.27c-9.34-50.18-23.05-99.25-40.95-147.12 40.01-5.66 84.06-4.19 132.23 4.19-9.32 59.43-43.24 110.77-91.28 142.93zm-247.16-9.16c42-65.89 95.63-108.78 162.08-128.58 19.77 51.64 34.33 104.74 43.59 159.14-69.22 26.75-147 15.26-205.67-30.56zM44.81 250.55c82.09-.12 152.91-9.55 212.25-28.22 4.97 10.13 9.73 20.31 14.28 30.56-72.07 22.52-131.49 68.71-177.83 138.24-33.36-40.04-49.97-88.6-48.7-140.58zM160.59 67.52c28.41 37.17 53.56 75.49 75.45 114.81-51.85 15.26-113.72 23.1-185.27 23.59 14.78-60.48 55.5-110.78 109.82-138.4zm224.33 21.22c-25.7 33.14-61.18 59.35-106.39 78.49-21.66-39.69-46.42-78.41-74.39-115.99 63.32-16.15 128.82-2.63 180.78 37.5zM255.99 0C114.61 0 0 114.62 0 256s114.61 256 255.99 256C397.39 512 512 397.38 512 256S397.38 0 255.99 0z" fill="" opacity="1" data-original="#000000"></path>
+        </g>
+    </symbol>
+    <symbol id="facebook" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" fill-rule="evenodd">
+        <g>
+            <path d="M344.9 140.6V84.7s-57.2-.5-61.1-.5c-25.9 0-63 29.4-63 62.8v59.9h-53.6v63.5H220V428h62.5V269.6h55.3l7-62.1h-61.6v-45.6c0-10.9 8.2-21.7 20.6-21.7 8.3.1 41.1.4 41.1.4z" fill="" opacity="1" data-original="#000000"></path>
+        </g>
+    </symbol>
+    <symbol id="linkedin" x="0" y="0" viewBox="0 0 100 100" style="enable-background:new 0 0 512 512" xml:space="preserve">
+        <g>
+            <path d="M90 90V60.7c0-14.4-3.1-25.4-19.9-25.4-8.1 0-13.5 4.4-15.7 8.6h-.2v-7.3H38.3V90h16.6V63.5c0-7 1.3-13.7 9.9-13.7 8.5 0 8.6 7.9 8.6 14.1v26H90zM11.3 36.6h16.6V90H11.3zM19.6 10c-5.3 0-9.6 4.3-9.6 9.6s4.3 9.7 9.6 9.7 9.6-4.4 9.6-9.7-4.3-9.6-9.6-9.6z" fill="" opacity="1" data-original="#000000"></path>
+        </g>
+    </symbol>
+    <symbol id="pinterest" x="0" y="0" viewBox="0 0 310.05 310.05" style="enable-background:new 0 0 512 512" xml:space="preserve">
+        <g>
+            <path d="M245.265 31.772C223.923 11.284 194.388 0 162.101 0c-49.32 0-79.654 20.217-96.416 37.176-20.658 20.9-32.504 48.651-32.504 76.139 0 34.513 14.436 61.003 38.611 70.858 1.623.665 3.256 1 4.857 1 5.1 0 9.141-3.337 10.541-8.69.816-3.071 2.707-10.647 3.529-13.936 1.76-6.495.338-9.619-3.5-14.142-6.992-8.273-10.248-18.056-10.248-30.788 0-37.818 28.16-78.011 80.352-78.011 41.412 0 67.137 23.537 67.137 61.425 0 23.909-5.15 46.051-14.504 62.35-6.5 11.325-17.93 24.825-35.477 24.825-7.588 0-14.404-3.117-18.705-8.551-4.063-5.137-5.402-11.773-3.768-18.689 1.846-7.814 4.363-15.965 6.799-23.845 4.443-14.392 8.643-27.985 8.643-38.83 0-18.55-11.404-31.014-28.375-31.014-21.568 0-38.465 21.906-38.465 49.871 0 13.715 3.645 23.973 5.295 27.912-2.717 11.512-18.865 79.953-21.928 92.859-1.771 7.534-12.44 67.039 5.219 71.784 19.841 5.331 37.576-52.623 39.381-59.172 1.463-5.326 6.582-25.465 9.719-37.845 9.578 9.226 25 15.463 40.006 15.463 28.289 0 53.73-12.73 71.637-35.843 17.367-22.418 26.932-53.664 26.932-87.978 0-26.826-11.52-53.272-31.604-72.556z" fill="" opacity="1" data-original="#000000"></path>
+        </g>
+    </symbol>
+    <symbol id="skype" x="0" y="0" viewBox="0 0 100 100" style="enable-background:new 0 0 512 512" xml:space="preserve">
+        <g>
+            <path d="M87.6 58.4c5.8-26-17-49.6-43.8-45.1C29.3 4.3 10 14.5 10 31.8c0 4 1.1 7.8 3 11-5.3 26.1 17.6 49.4 44.4 44.5 18.9 10 39.7-9.9 30.2-28.9zM62.2 74.1c-7 2.9-18.6 2.9-25.6-.8C26.6 68 24.9 56 33.5 56c6.5 0 4.4 7.6 11 10.6 3 1.4 9.5 1.5 13.2-1s3.4-6.4 1.4-8.2c-5.3-4.9-20.6-3-27.6-11.6-3-3.7-3.6-10.3.1-15.1 6.5-8.4 25.6-8.9 33.8-2.6 7.6 5.9 5.5 13.6-.6 13.6-7.3 0-3.5-9.6-15.4-9.6-8.6 0-12 6.1-5.9 9.1C51.7 45.4 72.6 44 72.6 60c0 6.6-4.1 11.5-10.4 14.1z" fill="" opacity="1" data-original="#000000"></path>
+        </g>
+    </symbol>
+    <symbol id="telegram" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+       <g>
+            <path d="M12 24c6.629 0 12-5.371 12-12S18.629 0 12 0 0 5.371 0 12s5.371 12 12 12zM5.491 11.74l11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z" fill="" opacity="1" data-original="#000000" class=""></path>
+        </g>
+    </symbol>
+    <symbol id="twitter" x="0" y="0" viewBox="0 0 511.987 511.987" style="enable-background:new 0 0 512 512" xml:space="preserve">
+       <g>
+            <path d="M508.293 100.591a15.003 15.003 0 0 0-18.586-3.258c-.533.296-1.071.586-1.611.87a111.856 111.856 0 0 0 12.293-28.246 14.998 14.998 0 0 0-5.142-15.806 14.997 14.997 0 0 0-16.565-1.359 243.556 243.556 0 0 1-51.234 21.139c-20.994-19.072-48.629-29.857-77.146-29.857-63.2 0-114.617 51.417-114.617 114.616 0 2.218.064 4.435.191 6.646-70.906-4.906-135.231-39.735-178.498-97.241a14.994 14.994 0 0 0-11.186-6.109 14.982 14.982 0 0 0-13.5 6.807c-11.781 18.157-18.008 39.241-18.008 60.971 0 19.958 5.329 39.18 14.962 55.919a14.999 14.999 0 0 0-14.922 14.597 112.426 112.426 0 0 0-.041 3.021c0 35.378 16.438 67.405 42.647 88.098a15.007 15.007 0 0 0-1.013 10.763c6.481 22.989 20.52 43.721 39.529 58.376 7.708 5.942 16.015 10.794 24.764 14.499-30.578 13.273-63.686 20.179-97.502 20.179-2.572 0-5.146-.039-7.65-.115-6.774-.188-12.836 4.148-14.808 10.627a15 15 0 0 0 6.381 17.073c47.057 29.514 101.428 45.114 157.235 45.114 79.146 0 153.554-30.821 209.519-86.785 55.966-55.964 86.787-130.373 86.787-209.52 0-.729-.003-1.459-.008-2.191a276.17 276.17 0 0 0 48.423-49.97 15 15 0 0 0-.694-18.858z" fill="" opacity="1" data-original="#000000"></path>
+        </g>
+    </symbol>
+    <symbol id="viber" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve">
+       <g>
+            <path d="M23.155 13.893c.716-6.027-.344-9.832-2.256-11.553l.001-.001C17.814-.6 7.392-1.035 3.7 2.471 2.042 4.186 1.458 6.703 1.394 9.819c-.064 3.117-.14 8.956 5.301 10.54H6.7l-.005 2.419s-.037.98.589 1.177c.716.232 1.04-.223 3.267-2.883 3.724.323 6.584-.417 6.909-.525.752-.252 5.007-.815 5.695-6.654zM10.918 19.37s-2.357 2.939-3.09 3.702c-.24.248-.503.225-.499-.267 0-.323.018-4.016.018-4.016-4.613-1.322-4.341-6.294-4.291-8.895.05-2.602.526-4.733 1.93-6.168C8.225.689 17.362 1.368 19.69 3.556c2.846 2.523 1.833 9.651 1.839 9.894-.585 4.874-4.033 5.183-4.667 5.394-.271.09-2.786.737-5.944.526z" fill="" opacity="1" data-original="#000000"></path><path d="M12.222 4.297c-.385 0-.385.6 0 .605 2.987.023 5.447 2.105 5.474 5.924 0 .403.59.398.585-.005h-.001c-.032-4.115-2.718-6.501-6.058-6.524z" fill="" opacity="1" data-original="#000000"></path>
+            <path d="M16.151 10.193c-.009.398.58.417.585.014.049-2.269-1.35-4.138-3.979-4.335-.385-.028-.425.577-.041.605 2.28.173 3.481 1.729 3.435 3.716zM15.521 12.774c-.494-.286-.997-.108-1.205.173l-.435.563c-.221.286-.634.248-.634.248-3.014-.797-3.82-3.951-3.82-3.951s-.037-.427.239-.656l.544-.45c.272-.216.444-.736.167-1.247-.74-1.337-1.237-1.798-1.49-2.152-.266-.333-.666-.408-1.082-.183h-.009c-.865.506-1.812 1.453-1.509 2.428.517 1.028 1.467 4.305 4.495 6.781 1.423 1.171 3.675 2.371 4.631 2.648l.009.014c.942.314 1.858-.67 2.347-1.561v-.007c.217-.431.145-.839-.172-1.106-.562-.548-1.41-1.153-2.076-1.542z" fill="" opacity="1" data-original="#000000"></path>
+            <path d="M13.169 8.104c.961.056 1.427.558 1.477 1.589.018.403.603.375.585-.028-.064-1.346-.766-2.096-2.03-2.166-.385-.023-.421.582-.032.605z" fill="" opacity="1" data-original="#000000"></path>
+        </g>
+    </symbol>
+    <symbol id="vk" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve">
+       <g>
+            <path d="M19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739V5.949c0-.656-.187-.949-.74-.949H9.161c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001H.9c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553C6.318 17.343 9.374 19 12.154 19c1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667C19.114 18.217 19.407 19 20.405 19h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z" fill="" opacity="1" data-original="#000000"></path>
+        </g>
+    </symbol>
+    <symbol id="whatsapp" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve">
+       <g>
+            <path d="m17.507 14.307-.009.075c-2.199-1.096-2.429-1.242-2.713-.816-.197.295-.771.964-.944 1.162-.175.195-.349.21-.646.075-.3-.15-1.263-.465-2.403-1.485-.888-.795-1.484-1.77-1.66-2.07-.293-.506.32-.578.878-1.634.1-.21.049-.375-.025-.524-.075-.15-.672-1.62-.922-2.206-.24-.584-.487-.51-.672-.51-.576-.05-.997-.042-1.368.344-1.614 1.774-1.207 3.604.174 5.55 2.714 3.552 4.16 4.206 6.804 5.114.714.227 1.365.195 1.88.121.574-.091 1.767-.721 2.016-1.426.255-.705.255-1.29.18-1.425-.074-.135-.27-.21-.57-.345z" fill="" opacity="1" data-original="#000000"></path>
+            <path d="M20.52 3.449C12.831-3.984.106 1.407.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c7.905 4.27 17.661-1.4 17.665-10.449 0-3.176-1.24-6.165-3.495-8.411zm1.482 8.417c-.006 7.633-8.385 12.4-15.012 8.504l-.36-.214-3.75.975 1.005-3.645-.239-.375c-4.124-6.565.614-15.145 8.426-15.145a9.865 9.865 0 0 1 7.021 2.91 9.788 9.788 0 0 1 2.909 6.99z" fill="" opacity="1" data-original="#000000"></path>
+        </g>
+    </symbol>
+    <symbol id="check" x="0" y="0" viewBox="0 0 30 30" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+       <g>
+            <path fill="" fill-rule="evenodd" d="m10.071 18.506-.172.172-5.303-5.304a.5.5 0 0 0-.707 0L2.475 14.79a.5.5 0 0 0 0 .707l7.07 7.07c.199.199.51.199.708 0l1.94-1.939zm3.536-3.535 5.838-5.84a.5.5 0 0 1 .708 0l1.414 1.415a.5.5 0 0 1 0 .707l-5.84 5.839zm1.939 7.596-7.071-7.071a.5.5 0 0 1 0-.707l1.414-1.415a.5.5 0 0 1 .707 0l5.303 5.304 9.546-9.546a.5.5 0 0 1 .708 0l1.414 1.414a.5.5 0 0 1 0 .707L16.253 22.567a.495.495 0 0 1-.707 0z" opacity="1" data-original="#000000"></path>
+        </g>
+    </symbol>
+</svg>
