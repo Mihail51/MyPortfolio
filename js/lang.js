@@ -460,6 +460,12 @@ const langArr = {
 		"he" : "התעודות שלי",
 	},  
 	
+	"image" : {
+		"ru" : "Фотография верстальщика",
+        "en" : "Photo of the layout designer",
+		"he" : "תמונה של מעצב הפריסה",
+	},  
+	
 	"" : {
 		"ru" : "",
         "en" : "",

@@ -51,7 +51,7 @@
                         <source>
                         <source>
                         <source type="image/webp" srcset="images/foto.webp 1x, images/foto-2x.webp 2x">
-                        <img width="239" height="239" src="images/foto.jpg" srcset="images/foto@2x.jpg 2x" alt="">
+                        <img class="lng__image" width="239" height="239" src="images/foto.jpg" srcset="images/foto@2x.jpg 2x" alt="">
                     </picture>
                     <ul class="name header__name">
                         <li class="greeting header__greeting"><span class="lng__header__greeting">Hi, I&apos;m </span> <span class="header__greeting__name lng__header__greeting__name"> Mihail Gofman</span></li>
@@ -62,7 +62,7 @@
                         <ul class="menu header__menu">
                             <li class="item menu__item header__menu__item header__menu__item_1">
                                 <icon class="icon menu__icon header__menu__icon">
-                                    <a href="#" target="_blank">
+                                    <a class="page__link" href="index.html" target="_blank">
                                         <svg>
                                             <use xlink:href="#identity-card"></use>
                                         </svg>
@@ -72,7 +72,7 @@
                             </li>
                             <li class="item menu__item header__menu__item header__menu__item_2">
                                 <icon class="icon menu__icon header__menu__icon">
-                                    <a href="resume.html" target="_blank">
+                                    <a class="page__link" href="resume.html" target="_blank">
                                         <svg>
                                             <use xlink:href="#menu-button"></use>
                                         </svg>
@@ -82,7 +82,7 @@
                             </li>
                             <li class="item menu__item header__menu__item header__menu__item_3">
                                 <icon class="icon menu__icon header__menu__icon">
-                                    <a href="#" target="_blank">
+                                    <a class="page__link" href="#" target="_blank">
                                         <svg>
                                             <use xlink:href="#briefcase"></use>
                                         </svg>
@@ -92,7 +92,7 @@
                             </li>
                             <li class="item menu__item header__menu__item header__menu__item_4">
                                 <icon class="icon menu__icon header__menu__icon">
-                                    <a href="#" target="_blank">
+                                    <a class="page__link" href="#" target="_blank">
                                         <svg>
                                             <use xlink:href="#setting"></use>
                                         </svg>
@@ -102,7 +102,7 @@
                             </li>
                             <li class="item menu__item header__menu__item header__menu__item_5">
                                 <icon class="icon menu__icon header__menu__icon">
-                                    <a href="#" target="_blank">
+                                    <a class="page__link" href="#" target="_blank">
                                         <svg>
                                             <use xlink:href="#testimonial"></use>
                                         </svg>
@@ -112,7 +112,7 @@
                             </li>
                             <li class="item menu__item header__menu__item header__menu__item_6">
                                 <icon class="icon menu__icon header__menu__icon">
-                                    <a href="#" target="_blank">
+                                    <a class="page__link" href="#" target="_blank">
                                         <svg>
                                             <use xlink:href="#mail"></use>
                                         </svg>
@@ -236,21 +236,21 @@
                                             <source type="image/webp" srcset="images/Certificates/test.ru@0.5.webp 1x, images/Certificates/test.ru.webp 2x">
                                             <img src="images/Certificates/test.ru@0.5.jpg" srcset="images/Certificates/test.ru.jpg 2x" alt="">
                                         </picture>  -->
-                                        <picture class="image certificate__image en">
+                                        <picture class="image certificate__image rotate en">
                                             <source>
                                             <source>
                                             <source>
                                             <source>
                                             <source type="image/webp" srcset="images/Certificates/rusakov@0.5.webp 1x, images/Certificates/rusakov.webp 2x">
-                                            <img class="rotate" src="images/Certificates/rusakov@@0.5.jpg" srcset="images/Certificates/rusakov.jpg 2x" alt="">
+                                            <img src="images/Certificates/rusakov@@0.5.jpg" srcset="images/Certificates/rusakov.jpg 2x" alt="">
                                         </picture>   
-                                        <picture class="image certificate__image ru">
+                                        <picture class="image certificate__image rotate ru">
                                             <source>
                                             <source>
                                             <source>
                                             <source>
                                             <source type="image/webp" srcset="images/Certificates/rusakov@0.5.webp 1x, images/Certificates/rusakov.webp 2x">
-                                            <img class="rotate" src="images/Certificates/rusakov@@0.5.jpg" srcset="images/Certificates/rusakov.jpg 2x" alt="">
+                                            <img src="images/Certificates/rusakov@@0.5.jpg" srcset="images/Certificates/rusakov.jpg 2x" alt="">
                                         </picture>
                                         <picture class="image certificate__image en">
                                             <source>
@@ -486,22 +486,48 @@
     }
   }
 </script>
-<!--для добавления класса 'centered' при наведении-->
 <script>
-    document.querySelectorAll('.image').forEach(image => {
-  image.addEventListener('mouseenter', function() {
-    this.classList.add('centered');
-  });
-  image.addEventListener('mouseleave', function() {
-    this.classList.remove('centered');
+    // JavaScript для управления поведением клика по изображению
+document.querySelectorAll('picture.image.certificate__image').forEach(image => {
+  image.addEventListener('click', function() {
+    // Проверка, имеет ли изображение класс 'fullsize'
+    if (this.classList.contains('fullsize')) {
+      // Если да, то уменьшаем изображение до исходного размера
+      this.classList.remove('fullsize');
+      // Убираем поворот, если он был применён
+      this.classList.remove('rotate90');
+      enableInteractionForOtherImages();
+    } else {
+      // Если нет, то увеличиваем изображение на весь блок
+      this.classList.add('fullsize');
+      // Добавляем поворот на 90 градусов, если изображение имеет класс 'rotate'
+      if (this.classList.contains('rotate')) {
+        this.classList.add('rotate90');
+      }
+      disableInteractionForOtherImages(this);
+    }
   });
 });
-</script>
 
+function disableInteractionForOtherImages(currentImage) {
+  document.querySelectorAll('picture.image.certificate__image').forEach(image => {
+    if (image !== currentImage) {
+      image.style.pointerEvents = 'none';
+    }
+  });
+}
+
+function enableInteractionForOtherImages() {
+  document.querySelectorAll('picture.image.certificate__image').forEach(image => {
+    image.style.pointerEvents = 'auto';
+  });
+}
+
+</script>
 
 <script src="js/lang.js"></script>    
 <script src="js/app.js"></script>
-<!--<script src="js/picture.js"></script>  -->
+<script src="js/picture.js"></script> 
 <script src="js/details.js"></script>
     
 </body>

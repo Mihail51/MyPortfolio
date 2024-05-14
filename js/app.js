@@ -4,10 +4,10 @@ const allLang = ['ru', 'en', 'he'];
 
 //let page = document.getElementById("mystyle").href="css/style.css";
 
-select.addEventListener('change', changeURLLanguage);
+select.addEventListener('change', changeURLLanguage);   
 
-function changeURLLanguage() {
-	let lang = select.value;
+function changeURLLanguage() {                           
+	let lang = select.value;                               
 	location.href = window.location.pathname + '#' + lang;
 	location.reload();
 }
@@ -29,6 +29,11 @@ function changeLanguage() {
 			elem.innerHTML = langArr[key][hash];
 		}
 	}
+
+	// Обновление всех ссылок с классом 'page__link'
+    document.querySelectorAll('.page__link').forEach(link => {
+        link.href = `${link.href.split('#')[0]}#${hash}`;
+    });
 
 	// change dir
 	let lang = select.value; 
@@ -65,8 +70,6 @@ function changeLanguage() {
 		document.querySelectorAll('picture.image.certificate__image.en').forEach(picture => {
 		picture.classList.add('visually-hidden');
 		});
-
-		
 	}  
 }
 

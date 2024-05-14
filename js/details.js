@@ -19,10 +19,13 @@ document
 
 
 
-      // По клику на тело документа
-document.body.onclick = () => {
-  // Найти все открытые <details>
-  document.body.querySelectorAll('details[open]')
-    // И закрыть каждый из них
-    .forEach(e => e.open = false)
+// По клику на тело документа
+document.body.onclick = (event) => {
+  // Проверяем, что клик не был совершён по изображению
+  if (event.target.tagName !== 'IMG') {
+    // Найти все открытые <details>
+    document.body.querySelectorAll('details[open]')
+      // И закрыть каждый из них
+      .forEach(e => e.open = false);
+  }
 }

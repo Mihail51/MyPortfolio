@@ -1,4 +1,5 @@
 
+// JavaScript для скрытия ненужных изображений (по языку)
 // Предполагается, что у вас есть элемент select с определенным id или классом
 const select = document.querySelector('#change-lang'); // Или используйте соответствующий класс
 
@@ -26,3 +27,5 @@ select.addEventListener('change', (event) => {
     });
   }
 });
+
+

@@ -620,53 +620,35 @@ details[open] > .detalis__title svg {
 }
 .certificate__image img {
     width: 100%;
-    transition: 0.5s;
-    position: relative;
-    z-index: 1;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-}  
-.certificate__image img:hover {
-    z-index: 10;
-    cursor: pointer;
-/*    transform: scale(2.0);
-    -webkit-transform: scale(2.0);
-    -moz-transform: scale(2.0);
-    -ms-transform: scale(2.0);
-    -o-transform: scale(2.0);  */
-} /*
-.centered {
+    transition: transform 0.3s ease, z-index 0s linear 0.3s; /* Плавный переход и задержка изменения z-index */
+    position: relative; /* Относительное позиционирование для возможности смещения */
+    z-index: 1; /* Начальный z-index */
+} 
+
+/* CSS для класса 'fullsize' */
+.fullsize {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 10;
-  transition: transform 0.3s ease, z-index 0s;
-  transform: translate(-50%, -50%) scale(2.0);
-  -webkit-transform: translate(-50%, -50%) scale(2.0);
-  -moz-transform: translate(-50%, -50%) scale(2.0);
-  -ms-transform: translate(-50%, -50%) scale(2.0);
-  -o-transform: translate(-50%, -50%) scale(2.0);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
 }
-*/
-.centered {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 10;
-    cursor: pointer;
-    transition: transform 0.3s ease, z-index 0s;
+/* CSS для класса 'rotate90' */
+.rotate90 {
+  transform: rotate(90deg);                  /* Поворот на 90 градусов */
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
 }
-.certificate__image img:hover .rotate:hover {
-    transform: rotate('90deg');
-    -webkit-transform: rotate('90deg');
-    -moz-transform: rotate('90deg');
-    -ms-transform: rotate('90deg');
-    -o-transform: rotate('90deg');
-}   
+
+
 
 /* ASIDE */
 .aside a svg, .aside button svg {
