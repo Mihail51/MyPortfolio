@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <meta id="my-description" name="description" content="описание не длиннее 155 символов">
-    <meta id="my-keywords" name="keywords" content="мета-теги, шаблон, html, css">
+    <meta name="description" content="описание не длиннее 155 символов">
+    <meta name="keywords" content="мета-теги, шаблон, html, css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/stylesheet.css">
@@ -51,7 +51,7 @@
                         <source>
                         <source>
                         <source type="image/webp" srcset="images/foto.webp 1x, images/foto-2x.webp 2x">
-                        <img class="lng__image" width="239" height="239" src="images/foto.jpg" srcset="images/foto@2x.jpg 2x" alt="">
+                        <img width="239" height="239" src="images/foto.jpg" srcset="images/foto@2x.jpg 2x" alt="">
                     </picture>
                     <ul class="name header__name">
                         <li class="greeting header__greeting"><span class="lng__header__greeting">Hi, I&apos;m </span> <span class="header__greeting__name lng__header__greeting__name"> Mihail Gofman</span></li>
@@ -123,261 +123,16 @@
                         </ul>
                     </nav>
                 </header>
-                <main class="main page__main resume__page__main">
-                    <section class="portfile main__portfile resumw__main__portfile" id="portfile">
-                        <div class="title main__title main__title_resume">
-                            <h1 class="lng__main__title_resume">Resume</h1>
+                <main class="main page__main">
+                    <section class="portfile main__portfile" id="portfile">
+                        <div class="title main__title">
+                            <h1 class="lng__main__title_testimonials">Testimonials</h1>
                             <svg>
-                                <use xlink:href="#menu-button"></use>
+                                <use xlink:href="#testimonial"></use>
                             </svg>
                         </div>
-                        <div class="content main__content resume__main__content">
-                            <details open>
-                                <summary class="title detalis__title detailis__title_1"><h3 class="lng__detailis__title_1">Education History</h3><svg><use xlink:href="#arrow"></use></svg></summary>
-                                <article>
-                                    <ul class="events history__events history__events_1">
-                                        <li class="event history__event history__event_1_1">
-                                            <h4 class="caption event__caption lng__event__caption_1_1">San Francisco State University</h4>
-                                            <p class="date event__date lng__date__event_1_1">4 Jan, 2007 - Present</p>
-                                            <p class="name event__name lng__name__event_1_1">B.Sc in Computer Science </p>
-                                            <p class="description event__description lng__event__description_1_1">I got my degree in web design and development, and later on, I have finished a course in photography and UI Design.</p>
-                                        </li>
-                                        <li class="event history__event history__event_1_2">
-                                            <h4 class="caption event__caption lng__event__caption_1_2">California State University</h4>
-                                            <p class="date event__date lng__date__event_1_2">4 Jan, 2007 - Present</p>
-                                            <p class="name event__name lng__name__event_1_2">B.Sc in Computer Science </p>
-                                            <p class="description event__description lng__event__description_1_2">I got my degree in web design and development, and later on, I have finished a course in photography and UI Design.</p>
-                                        </li>
-                                        <li class="event history__event history__event_1_3">
-                                            <h4 class="caption event__caption lng__event__caption_1_3">Jamaica City University</h4>
-                                            <p class="date event__date lng__date__event_1_3">4 Jan, 2007 - Present</p>
-                                            <p class="name event__name lng__name__event_1_3">B.Sc in Computer Science </p>
-                                            <p class="description event__description lng__event__description_1_3">I got my degree in web design and development, and later on, I have finished a course in photography and UI Design.</p>
-                                        </li>
-                                        <li class="event history__event history__event_1_4">
-                                            <h4 class="caption event__caption lng__event__caption_1_4">Jamaica City University</h4>
-                                            <p class="date event__date lng__date__event_1_4">4 Jan, 2007 - Present</p>
-                                            <p class="name event__name lng__name__event_1_4">B.Sc in Computer Science </p>
-                                            <p class="description event__description lng__event__description_1_4">I got my degree in web design and development, and later on, I have finished a course in photography and UI Design.</p>
-                                        </li>
-                                    </ul>
-                                </article>
-                            </details>
-                            <details>
-                                <summary class="title detalis__title detailis__title_2"><h3 class="lng__detailis__title_2">Employment History</h3><svg><use xlink:href="#arrow"></use></svg></summary>
-                                <article>
-                                    <ul class="events history__events history__events_2">
-                                        <li class="event history__event history__event_2_1">
-                                            <h4 class="caption event__caption lng__event__caption_2_1">San Francisco State Company</h4>
-                                            <p class="date event__date lng__date__event_2_1">4 Jan, 2007 - Present</p>
-                                            <p class="name event__name lng__name__event_2_1">Professional Designer</p>
-                                            <p class="description event__description lng__event__description_2_1">Lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.  Lorem ipsum dolor sit amet. </p>
-                                        </li>
-                                        <li class="event history__event history__event_2_2">
-                                            <h4 class="caption event__caption lng__event__caption_2_2">Digital State Limited</h4>
-                                            <p class="date event__date lng__date__event_2_2">4 Jan, 2007 - Present</p>
-                                            <p class="name event__name lng__name__event_2_2">UI/UX Designer</p>
-                                            <p class="description event__description lng__event__description_2_2">Lipsum as it is sometimes known, is dummy text used in laying out print,  graphic or web designs. Lorem ipsum dolor sit amet.</p>
-                                        </li>
-                                        <li class="event history__event history__event_2_3">
-                                            <h4 class="caption event__caption lng__event__caption_2_3">Envato Company</h4>
-                                            <p class="date event__date lng__date__event_2_3">4 Jan, 2007 - Present</p>
-                                            <p class="name event__name lng__name__event_2_3">Creative Graphic Designer</p>
-                                            <p class="description event__description lng__event__description_2_3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim……...</p>
-                                        </li>
-                                        <li class="event history__event history__event_2_4">
-                                            <h4 class="caption event__caption lng__event__caption_2_4">Envato Company</h4>
-                                            <p class="date event__date lng__date__event_2_4">4 Jan, 2007 - Present</p>
-                                            <p class="name event__name lng__name__event_2_4">Creative Graphic Designer</p>
-                                            <p class="description event__description lng__event__description_2_4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim……...</p>
-                                        </li>
-                                        <li class="event history__event history__event_2_5">
-                                            <h4 class="caption event__caption lng__event__caption_2_5">Envato Company</h4>
-                                            <p class="date event__date lng__date__event_2_5">4 Jan, 2007 - Present</p>
-                                            <p class="name event__name lng__name__event_2_5">Creative Graphic Designer</p>
-                                            <p class="description event__description lng__event__description_2_5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim……...</p>
-                                        </li>
-                                    </ul>
-                                </article>
-                            </details>
-                            <details>
-                                <summary class="title detalis__title detailis__title_3"><h3 class="lng__detailis__title_3">Professional Skill</h3><svg><use xlink:href="#arrow"></use></svg></summary>
-                                <article>
-                                    <div class="certificates history__certificates">
-                                        <picture class="image certificate__image en">
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source type="image/webp" srcset="images/Certificates/geekbrains.html&css.en@0.5.webp 1x, images/Certificates/geekbrains.html&css.en.webp 2x">
-                                            <img src="images/Certificates/geekbrains.html&css.en@0.5.jpg" srcset="images/Certificates/geekbrains.html&css.en.jpg 2x" alt="">
-                                        </picture>
-                                        <picture class="image certificate__image ru">
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source type="image/webp" srcset="images/Certificates/geekbrains.html&css.ru@0.5.webp 1x, images/Certificates/geekbrains.html&css.ru.webp 2x">
-                                            <img src="images/Certificates/geekbrains.html&css.ru@0.5.jpg" srcset="images/Certificates/geekbrains.html&css.ru 2x" alt="">
-                                        </picture>
-                <!--                       <picture class="image certificate__image en">
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source type="image/webp" srcset="images/Certificates/test.en@0.5.webp 1x, images/Certificates/test.en.webp 2x">
-                                            <img src="images/Certificates/test.en@0.5.jpg" srcset="images/Certificates/test.en.jpg 2x" alt="">
-                                        </picture>
-                                        <picture class="image certificate__image ru">
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source type="image/webp" srcset="images/Certificates/test.ru@0.5.webp 1x, images/Certificates/test.ru.webp 2x">
-                                            <img src="images/Certificates/test.ru@0.5.jpg" srcset="images/Certificates/test.ru.jpg 2x" alt="">
-                                        </picture>  -->
-                                        <picture class="image certificate__image rotate en">
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source type="image/webp" srcset="images/Certificates/rusakov@0.5.webp 1x, images/Certificates/rusakov.webp 2x">
-                                            <img src="images/Certificates/rusakov@@0.5.jpg" srcset="images/Certificates/rusakov.jpg 2x" alt="">
-                                        </picture>   
-                                        <picture class="image certificate__image rotate ru">
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source type="image/webp" srcset="images/Certificates/rusakov@0.5.webp 1x, images/Certificates/rusakov.webp 2x">
-                                            <img src="images/Certificates/rusakov@@0.5.jpg" srcset="images/Certificates/rusakov.jpg 2x" alt="">
-                                        </picture>
-                                        <picture class="image certificate__image en">
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source type="imag/webp" srcset="images/Certificates/module-1.en@0.5.webp 1x, images/Certificates/module-1.en.webp 2x">
-                                            <img src="images/Certificates/module-1.en@0.5.jpg" srcset="images/Certificates/module-1.en.jpg 2x" alt="">
-                                        </picture>
-                                        <picture class="image certificate__image ru">
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source type="image/webp" srcset="images/Certificates/module-1.ru@0.5.webp 1x, images/Certificates/module-1.ru.webp 2x">
-                                            <img src="images/Certificates/module-1.ru@0.5.jpg" srcset="images/Certificates/module-1.ru.jpg 2x" alt="">
-                                        </picture>
-                                        <picture class="image certificate__image en">
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source type="image/webp" srcset="images/Certificates/modul-2.en@0.5.webp 1x, images/Certificates/modul-2.en.webp 2x">
-                                            <img src="images/Certificates/modul-2.en@0.5.jpg" srcset="images/Certificates/modul-2.en.jpg 2x" alt="">
-                                        </picture>
-                                        <picture class="image certificate__image ru">
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source type="image/webp" srcset="images/Certificates/modul-2.ru@0.5.webp 1x, images/Certificates/modul-2.ru.webp 2x">
-                                            <img src="images/Certificates/modul-2.ru@0.5.jpg" srcset="images/Certificates/modul-2.ru.jpg 2x" alt="">
-                                        </picture>
-                                        <picture class="image certificate__image en">
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source type="image/webp" srcset="images/Certificates/flexbox.en@0.5.webp 1x, images/Certificates/flexbox.en.webp 2x">
-                                            <img src="images/Certificates/flexbox.en@0.5.jpg" srcset="images/Certificates/flexbox.en.jpg 2x" alt="">
-                                        </picture>
-                                        <picture class="image certificate__image ru">
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source type="image/webp" srcset="images/Certificates/flexbox.ru@0.5.webp 1x, images/Certificates/flexbox.ru.webp 2x">
-                                            <img src="images/Certificates/flexbox.ru@0.5.jpg" srcset="images/Certificates/flexbox.ru.jpg 2x" alt="">
-                                        </picture>
-                                        <picture class="image certificate__image en">
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source type="image/webp" srcset="images/Certificates/grid.en@0.5.webp 1x, images/Certificates/grid.en.webp 2x">
-                                            <img src="images/Certificates/grid.en@0.5.jpg" srcset="images/Certificates/grid.en.jpg 2x" alt="">
-                                        </picture>
-                                        <picture class="image certificate__image ru">
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source type="image/webp" srcset="images/Certificates/grid.ru@0.5.webp 1x, images/Certificates/grid.ru.webp 2x">
-                                            <img src="images/Certificates/grid.ru@0.5.jpg" srcset="images/Certificates/grid.ru.jpg 2x" alt="">
-                                        </picture>
-                                        <picture class="image certificate__image en">
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source type="image/webp" srcset="images/Certificates/svg.en@0.5.webp 1x, images/Certificates/svg.en.webp 2x">
-                                            <img src="images/Certificates/svg.en@0.5.jpg" srcset="images/Certificates/svg.en.jpg 2x" alt="">
-                                        </picture>
-                                        <picture class="image certificate__image ru">
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source type="image/webp" srcset="images/Certificates/svg.ru@0.5.webp 1x, images/Certificates/svg.ru.webp 2x">
-                                            <img src="images/Certificates/svg.ru@0.5.jpg" srcset="images/Certificates/svg.ru.jpg" alt="">
-                                        </picture>
-                                        <picture class="image certificate__image en">
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source type="image/webp" srcset="images/Certificates/super-start.en@0.5.webp 1x, images/Certificates/super-start.en.webp 2x">
-                                            <img src="images/Certificates/super-start.en@0.5.jpg" srcset="images/Certificates/super-start.en.jpg 2x" alt="">
-                                        </picture>
-                                        <picture class="image certificate__image ru">
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source type="image/webp" srcset="images/Certificates/super-start.ru@0.5.webp 1x, images/Certificates/super-start.ru.webp 2x">
-                                            <img src="images/Certificates/super-start.ru@0.5.jpg" srcset="images/Certificates/super-start.ru.jpg 2x" alt="">
-                                        </picture>
-                                        <picture class="image certificate__image en">
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source type="image/webp" srcset="images/Certificates/email.en@0.5.webp 1x, images/Certificates/email.en.webp 2x">
-                                            <img src="images/Certificates/email.en@0.5.jpg" srcset="images/Certificates/email.en.jpg" alt="">
-                                        </picture>
-                                        <picture class="image certificate__image ru">
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source>
-                                            <source type="image/webp" srcset="images/Certificates/email.ru@0.5.webp 1x, images/Certificates/email.ru.webp 2x">
-                                            <img src="images/Certificates/email.ru@0.5.jpg" srcset="images/Certificates/email.ru.jpg 2x" alt="">
-                                        </picture>
-                                    </div>
-                                </article>
-                            </details>
-                            <ul class="list resume__list">
-                                <li class="item resume__item resume__item_1">
-                                    
-                                </li>
-                                <li class="item resume__item resume__item_2">
-                                    
-                                </li>
-                                <li class="item resume__item resume__item_3">
-                                    
-                                </li>
-                            </ul>
+                        <div class="content main__content">
+                            
                         </div>
                     </section>
                     <aside class="aside main__aside">
@@ -477,7 +232,7 @@
         </div>
     </div>
 <!--Переключатель тем-->
-<script>
+    <script>
   function changeTheme(isChecked) {
     if (isChecked) {
       document.body.setAttribute('light', '');
@@ -486,49 +241,9 @@
     }
   }
 </script>
-<script>
-    // JavaScript для управления поведением клика по изображению
-document.querySelectorAll('picture.image.certificate__image').forEach(image => {
-  image.addEventListener('click', function() {
-    // Проверка, имеет ли изображение класс 'fullsize'
-    if (this.classList.contains('fullsize')) {
-      // Если да, то уменьшаем изображение до исходного размера
-      this.classList.remove('fullsize');
-      // Убираем поворот, если он был применён
-      this.classList.remove('rotate90');
-      enableInteractionForOtherImages();
-    } else {
-      // Если нет, то увеличиваем изображение на весь блок
-      this.classList.add('fullsize');
-      // Добавляем поворот на 90 градусов, если изображение имеет класс 'rotate'
-      if (this.classList.contains('rotate')) {
-        this.classList.add('rotate90');
-      }
-      disableInteractionForOtherImages(this);
-    }
-  });
-});
-
-function disableInteractionForOtherImages(currentImage) {
-  document.querySelectorAll('picture.image.certificate__image').forEach(image => {
-    if (image !== currentImage) {
-      image.style.pointerEvents = 'none';
-    }
-  });
-}
-
-function enableInteractionForOtherImages() {
-  document.querySelectorAll('picture.image.certificate__image').forEach(image => {
-    image.style.pointerEvents = 'auto';
-  });
-}
-
-</script>
 
 <script src="js/lang.js"></script>    
 <script src="js/app.js"></script>
-<script src="js/picture.js"></script> 
-<script src="js/details.js"></script>
     
 </body>
 </html>
@@ -539,9 +254,6 @@ function enableInteractionForOtherImages() {
             <path d="M3.659 29.843h24.682a.75.75 0 0 0 0-1.5H3.659a.75.75 0 0 0 0 1.5zM13.5 7.093V4.407a2.25 2.25 0 0 0-2.25-2.25h-1.5a2.25 2.25 0 0 0-2.25 2.25v2.686c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75zM24.5 7.093V4.407a2.25 2.25 0 0 0-2.25-2.25h-1.5a2.25 2.25 0 0 0-2.25 2.25v2.686c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75z" fill="" opacity="1" data-original="#000000" class=""></path>
             <path d="M29.091 9.093a2.75 2.75 0 0 0-2.75-2.75H5.659a2.75 2.75 0 0 0-2.75 2.75V24.41a2.75 2.75 0 0 0 2.75 2.75h20.682a2.75 2.75 0 0 0 2.75-2.75zM14.25 19.185a2.584 2.584 0 0 0-2.583-2.583H8.833a2.584 2.584 0 0 0-2.583 2.583v1.057a1.796 1.796 0 0 0 1.797 1.797h4.406a1.795 1.795 0 0 0 1.797-1.797zm2.912 1.565h7.853a.75.75 0 0 0 0-1.5h-7.853a.75.75 0 0 0 0 1.5zm-4.412-1.565v1.057a.298.298 0 0 1-.297.297H8.047a.296.296 0 0 1-.297-.297v-1.057c0-.598.485-1.083 1.083-1.083h2.834c.598 0 1.083.485 1.083 1.083zm4.412-1.865h7.853a.75.75 0 0 0 0-1.5h-7.853a.75.75 0 0 0 0 1.5zm-6.912-6.565a2.376 2.376 0 1 0 2.375 2.375 2.376 2.376 0 0 0-2.375-2.375zm0 1.5a.875.875 0 1 1 0 1.75.875.875 0 0 1 0-1.75zm6.912 1.636h7.853a.75.75 0 0 0 0-1.5h-7.853a.75.75 0 0 0 0 1.5z" fill="" opacity="1" data-original="#000000" class=""></path>
         </g>
-    </symbol>
-    <symbol id="arrow"  x="0" y="0" viewBox="0 0 492.004 492.004" style="enable-background:new 0 0 512 512" xml:space="preserve">
-        <g><path d="M382.678 226.804 163.73 7.86C158.666 2.792 151.906 0 144.698 0s-13.968 2.792-19.032 7.86l-16.124 16.12c-10.492 10.504-10.492 27.576 0 38.064L293.398 245.9l-184.06 184.06c-5.064 5.068-7.86 11.824-7.86 19.028 0 7.212 2.796 13.968 7.86 19.04l16.124 16.116c5.068 5.068 11.824 7.86 19.032 7.86s13.968-2.792 19.032-7.86L382.678 265c5.076-5.084 7.864-11.872 7.848-19.088.016-7.244-2.772-14.028-7.848-19.108z" fill="" opacity="1" data-original="#000000"></path></g>
     </symbol>
     <symbol id="menu-button" x="0px" y="0px" viewBox="0 0 459 459" style="enable-background:new 0 0 512 512;" xml:space="preserve">
         <g>

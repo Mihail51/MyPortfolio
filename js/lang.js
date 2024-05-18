@@ -82,11 +82,36 @@ const langArr = {
 		"ru" : "Профиль",
         "en" : "Profile",
 		"he" : "פּרוֹפִיל",
-	},  
+	},
+	  
 	"main__title_resume" : {
 		"ru" : "Резюме",
         "en" : "Resume",
 		"he" : "קורות חיים",
+	},  
+	  
+	"main__title_portfolio" : {
+		"ru" : "Портфолио",
+        "en" : "Portfolio",
+		"he" : "תיק עבודות",
+	},  
+	  
+	"main__title_services" : {
+		"ru" : "Услуги",
+        "en" : "Services",
+		"he" : "שירותים",
+	},  
+	  
+	"main__title_testimonials" : {
+		"ru" : "Отзывы",
+        "en" : "Testimonials",
+		"he" : "המלצות",
+	},  
+	  
+	"main__title_contacts" : {
+		"ru" : "Контакты",
+        "en" : "Contacts",
+		"he" : "אנשי קשר",
 	},  
 	
 	"main__term_1" : {
